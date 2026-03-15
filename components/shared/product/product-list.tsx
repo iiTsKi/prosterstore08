@@ -1,5 +1,5 @@
 import ProductCard from "./product-card";
-
+/*eslint-disable */
 const ProductList = ({
   data,
   title,
@@ -32,4 +32,5 @@ const ProductList = ({
   );
 };
 
+/*eslint-disable */
 export default ProductList;

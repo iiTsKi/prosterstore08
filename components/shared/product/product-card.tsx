@@ -2,8 +2,8 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import ProductPrice from "./product-price";
-
-const ProductCard = ({ product }: { product: any }) => {
+import { Product } from "@/types/index";
+const ProductCard = ({ product }: { product: Product }) => {
   //   const stars = `\u2605`;
   //or &#9733; for stars in html entity!
   return (
@@ -32,7 +32,7 @@ const ProductCard = ({ product }: { product: any }) => {
               <span className="select-none">{product.rating} &#10024;</span>
               {product.stock > 0 ? (
                 <span>
-                  <ProductPrice value={product.price} />
+                  <ProductPrice value={Number(product.price)} />
                 </span>
               ) : (
                 <span className="text-destructive">Unavailable</span>

@@ -4,3 +4,4 @@ export const APP_DESCRIPTION =
   "Ecommerce modern website built with NextJS!";
 export const APP_SERVER_URL =
   process.env.NEXT_PUBLIC_APP_SERVER_URL || "http://localhost:3000";
+export const LIMITED_DISPLAY = Number(process.env.NEXT_LIMITEDDISPLAY) || 4;
